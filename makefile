@@ -4,7 +4,7 @@ C = main.cpp Monitor_Class.cpp Sensor_Class.cpp Blood_Pressure_Alert.cpp Body_Te
 EXEC = main
 
 build: ${C} ${H}
-	${CC} `pkg-config --cflags --libs gtk+-2.0` ${C} -o ${EXEC}
+	${CC} -o ${EXEC} ${C} `pkg-config --cflags --libs gtk+-2.0`
 
 test:
 	./${EXEC}
