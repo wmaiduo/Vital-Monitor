@@ -11,13 +11,19 @@ This program currently only supports Linux system, to run this program.
 
 2. To run...
     make -> Compiles files and executable called 'main;
+    
     make test -> Runs the executable
-    make clean -> Deletes all files generated from compilation if they exist
+    
+    make clean -> Deletes all files generated from 
+    compilation if they exist
+    
     NOTE: No .o files are created independently, the linker/loader work together in one command line.
 
 ## Example Images
 ![Example Vital Monitor](./resources/example_monitor.png)
+
 Vital Monitor Screen
 
 ![Warning](./resources/warning.png)
+
 Warning when Abnormal Vital Sign is Detected
